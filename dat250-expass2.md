@@ -16,5 +16,4 @@ I inspected the database created through the terminal using the derby tool "ij".
 This let me connect to the db, inspect its content and run sql-queries.
 The program made tables for all the "@Entity"-marked classes as well as the joined tables "people_addresses" and "person_cards". 
 
-![Image of terminal]
-(./images/Terminal_ij.png)
+![Image of terminal](./images/Terminal_ij.png)

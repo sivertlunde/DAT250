@@ -17,4 +17,4 @@ This let me connect to the db, inspect its content and run sql-queries.
 The program made tables for all the "@Entity"-marked classes as well as the joined tables "people_addresses" and "person_cards". 
 
 ![Image of terminal]
-(https://github.com/sivertlunde/DAT250/blob/master/images/Skjermbilde%202020-09-08%20kl.%2018.25.13.png)
+(/images/Skjermbilde%202020-09-08%20kl.%2018.25.13.png)

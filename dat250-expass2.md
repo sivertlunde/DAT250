@@ -1,7 +1,7 @@
 # Assignment 2 #
 
 ### Link to code for experiments 1 and 2: ###
-_https://github.com/sivertlunde/DAT250_Assignment2_
+_https://github.com/sivertlunde/DAT250_Assignment2/tree/master/jpa-basic/src/main/java/no/hvl/dat250/jpa_
 
 ## Experiment 1 ##
 This was a fairly straight forward exercise. I decided to clone the github-project provided in the assignment. 

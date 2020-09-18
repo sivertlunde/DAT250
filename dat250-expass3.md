@@ -45,7 +45,9 @@ var myMapFunction = function() {
 
 **Reduce function**
 I then reduced these arrays down to a single array for each day, and added a field for amount of customers.
-`var myReduceFunction = function(keyDate, valueArray) {
+
+~~~~
+var myReduceFunction = function(keyDate, valueArray) {
     reducedVal = { moneySpent: 0, unitsSold: 0, customers: 0 };
     for (var idx = 0; idx < valueArray.length; idx++) {
       reducedVal.moneySpent += valueArray[idx].price;
@@ -53,15 +55,19 @@ I then reduced these arrays down to a single array for each day, and added a fie
       reducedVal.customers += 1;
     }
     return reducedVal;
-}`
+}
+~~~~
 
 **Execution**
 Finally I executed the mapReduce function by exporting the documents to a new collection "daily_rapport"
-`db.orders.mapReduce(
+
+~~~~
+db.orders.mapReduce(
     myMapFunction,
     myReduceFunction,
     { out: { merge: "daily_rapport" } }
-)`
+)
+~~~~
 
 **Full execution:**
 ![Image of my operation](./images/Additional_Operation.png)

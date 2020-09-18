@@ -31,14 +31,15 @@ I decided to create a mapping of each day and some stats for that day. I thought
 
 **Map function**
 I started by mapping dates to arrays containing price and totalQty for a particular shopping trip.
-`var myMapFunction = function() {
-    var totalQty = 0;
-    for (var idx = 0; idx < this.items.length; idx++) {
-      totalQty += this.items[idx].qty;
-    }
-    var value = { price: this.price, qty: totalQty}
-    emit(this.ord_date, value);
-};`
+
+`var myMapFunction = function() {`
+    `var totalQty = 0;`
+    `for (var idx = 0; idx < this.items.length; idx++) {`
+      `totalQty += this.items[idx].qty;`
+    `}`
+    `var value = { price: this.price, qty: totalQty}`
+    `emit(this.ord_date, value);`
+`};`
 
 **Reduce function**
 I then reduced these arrays down to a single array for each day, and added a field for amount of customers.

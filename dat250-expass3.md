@@ -30,6 +30,7 @@ As with experiment 1, there was little room for error on the first part of this 
 I decided to create a mapping of each day and some stats for that day. I thought this would be useful in analyzing shopping patterns or to simply get an overview of the day's occurences. I used atom to write the functions as I found it difficult to write them directly in the terminal interface. 
 
 **Map function**
+
 I started by mapping dates to arrays containing price and totalQty for a particular shopping trip.
 
 ~~~~
@@ -44,6 +45,7 @@ var myMapFunction = function() {
 ~~~~
 
 **Reduce function**
+
 I then reduced these arrays down to a single array for each day, and added a field for amount of customers.
 
 ~~~~
@@ -59,6 +61,7 @@ var myReduceFunction = function(keyDate, valueArray) {
 ~~~~
 
 **Execution**
+
 Finally I executed the mapReduce function by exporting the documents to a new collection "daily_rapport"
 
 ~~~~
@@ -70,4 +73,5 @@ db.orders.mapReduce(
 ~~~~
 
 **Full execution:**
+
 ![Image of my operation](./images/Additional_Operation.png)

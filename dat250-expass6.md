@@ -1,6 +1,7 @@
-### Assignment 6 ###
+# Assignment 6 #
 
 __Link to code for exercise 1: https://github.com/sivertlunde/DAT250_Assignment6__
+
 __Link to code for exercise 2: https://github.com/sivertlunde/ReactTutorial__
 
 ## Summary ##
